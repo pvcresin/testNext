@@ -7,10 +7,10 @@ type Show = { id: number; name: string }
 const IndexPage: NextPage<{ shows: Show[] }> = ({ shows }) => (
   <>
     <h1>Home</h1>
-    <Link href='./'>
+    <Link href='/'>
       <a>Home</a>
     </Link>
-    <Link href='./about'>
+    <Link href='/about'>
       <a>About</a>
     </Link>
     <ul>
