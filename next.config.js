@@ -1,6 +1,6 @@
 const fetch = require('isomorphic-unfetch')
 
-const baseDirectory = '/testNextDir'
+const baseDirectory = '/testNext'
 
 module.exports = {
   assetPrefix: process.env.NODE_ENV === 'production' ? baseDirectory : '',
