@@ -10,6 +10,7 @@ const AboutPage: NextPage = () => (
     <Link href='/about'>
       <a>About</a>
     </Link>
+    <h1>This is the about page</h1>
   </>
 )
 
