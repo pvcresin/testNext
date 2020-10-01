@@ -11,7 +11,7 @@ const Post: NextPage<{
 }> = ({ show }) => (
   <>
     <h1>{show?.name}</h1>
-    <p>{show?.summary}</p>
+    <p dangerouslySetInnerHTML={{ __html: show?.summary || '' }}></p>
     <img src={show?.image?.medium} />
   </>
 )
