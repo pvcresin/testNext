@@ -1,11 +1,11 @@
 const fetch = require('isomorphic-unfetch')
 
 module.exports = {
-  exportTrailingSlash: true,
-  exportPathMap: async function() {
+  trailingSlash: true,
+  exportPathMap: async function () {
     const paths = {
       '/': { page: '/' },
-      '/about': { page: '/about' }
+      '/about': { page: '/about' },
     }
     const res = await fetch('https://api.tvmaze.com/search/shows?q=batman')
     const data = await res.json()
@@ -16,5 +16,5 @@ module.exports = {
     })
 
     return paths
-  }
+  },
 }
